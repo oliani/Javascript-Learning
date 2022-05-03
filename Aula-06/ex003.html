@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Program</title>
+    <style>
+        /* CSS Style */
+        body{
+            background-color: black;
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: rgb(0, 255, 0);
+        }
+
+        p{
+            color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- HTML Text -->
+    <h1>Hello Wolrd!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iure deleniti odit, rem itaque velit? Praesentium voluptatem corrupti quos, laboriosam tempora possimus vel quaerat fugit voluptates in reiciendis sed ut!</p>
+    <script>
+        var n1 = Number.parseInt(prompt('Enter a number: ')) // Getting a string and converting into number
+        var n2 = Number.parseInt(prompt('Enter another number: ')) // Getting a string and converting into number   
+        /*
+        Alternative way - Just read every number as string and convert into a number
+        Number.parseInt(n1) // Converting n1 to number
+        Number.parseInt(n2) // Converting n2 to number
+        Another Way
+        Number(n1)
+        Number(n2)
+        */
+        var sum = n1 + n2
+        // Printing withow template string
+        alert(n1 + ' + ' +  n2 + " = " + sum)
+
+        // Using template string
+        alert(`${n1} + ${n2} = ${sum}`) // Warning: use ` `
+    </script>
+</body>
+</html>
