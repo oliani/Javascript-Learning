@@ -8,7 +8,7 @@ The main trajetory I made is based on "Curso em vídeo - Curso de Javascript"
 
 I had previeous programming **logic, C, C++, Java, HTML** and **CSS** knowledge.
 
-Followed Guides:
+## References:
 
 * [Curso em vídeo - Gustavo Guanabara - PT-BR](https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm)
 * [Programming With Mosh - ENG](https://www.youtube.com/watch?v=W6NZfCO5SIk)
@@ -16,7 +16,7 @@ Followed Guides:
 * [Danki Code - PT-BR](https://www.youtube.com/watch?v=RvcRxEeJqi8)
 
 
-# Recommended learning sequence
+## Recommended learning sequence
 
 ```mermaid
 graph LR
