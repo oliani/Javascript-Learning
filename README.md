@@ -4,6 +4,10 @@ Repo with all of my fisrt **javascript** codes writed while learning by myself.
 
 First archives are in HTML format and I have placed the javascript code inside it just so make easier to see what am I doing using HTML and CSS. 
 
+The main trajetory I made is based on "Curso em vídeo - Curso de Javascript"
+
+I had previeous programming **logic, C, C++, Java, HTML** and **CSS** knowledge.
+
 Followed Guides:
 
 * [Curso em vídeo - Gustavo Guanabara - PT-BR](https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm)
