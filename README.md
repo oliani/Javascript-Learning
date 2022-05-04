@@ -19,6 +19,7 @@ B-->C[HTML & CSS3]--> D[Javascript & Node.js]
 ```
 ## Where am I going next?
 - [ ] React
-- [ ] Vue.js]
+- [ ] React Native
+- [ ] Vue.js
 - [ ] PHP
 - [ ] Go full Stack
