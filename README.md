@@ -8,3 +8,17 @@ Followed Guides:
 * [Programming With Mosh - ENG](https://www.youtube.com/watch?v=W6NZfCO5SIk)
 * [Aaron Jack - ENG](https://www.youtube.com/watch?v=c-I5S_zTwAc)
 * [Danki Code - PT-BR](https://www.youtube.com/watch?v=RvcRxEeJqi8)
+
+
+# Recommended learning sequence
+
+```mermaid
+graph LR
+A[Programming Logic] --> B[Git & GitHub]
+B-->C[HTML & CSS3]--> D[Javascript & Node.js]
+```
+## Where am I going next?
+- [ ] React
+- [ ] Vue.js]
+- [ ] PHP
+- [ ] Go full Stack
