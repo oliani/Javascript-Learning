@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 300px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#area2{
+            font: normal 20pt Arial;
+            background: blue;
+            color: white;
+            width: 300px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body id="bd" onclick="bgclick()">
+    <div id="area" onclick="clickar()" onmouseenter="entrar()" onmouseout="saiu()">
+        Lets interact...
+    </div>
+    <div id="area2">
+        Lets interact...
+    </div>
+    <script>
+        var i = 0;
+        var a = window.document.getElementById("area");
+        var b = window.document.getElementById("area2");
+        b.style.background = 'blue';
+        b.addEventListener("click", cl);
+        b.addEventListener('mouseout', out)
+        function clickar(){
+            if(a.innerText == "Lets interact..."){
+                a.innerText = "Clicked 1 time!";
+                i++;
+            } else{
+                i++;
+                a.innerText = "Clicked " + i + " times!";
+            } 
+            
+        }
+
+        function entrar(){
+            a.style.color= 'red';
+            a.style.background = 'blue';
+        }
+
+        function saiu(){
+            a.style.color = 'white';
+            a.style.background = 'green';
+        }
+        /*Div area2*/
+        function cl(){
+             b.style.background = 'grey';
+             b.innerText = 'Clicked!';
+             b.style.color = 'red';
+        }
+
+        function out(){
+            b.style.background = 'blue';
+            b.innerText = 'Mouse move out!';
+            b.style.color = 'white';
+            
+        }
+    </script>
+</body>
+</html>

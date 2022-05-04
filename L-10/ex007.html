@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lets add some values</h1>
+    <input type="number" name="inp1" id="input1">
+    <input type="number" name="inp2" id="input2">
+    <input type="button" value="sum" onclick="makeSum()">
+    <div id="res">Result: </div>
+    <script>
+        function makeSum(){
+            var x = Number(window.document.getElementsByName('inp1')[0].value);
+            var y = Number(window.document.querySelector('input#input2').value);
+            var res = window.document.getElementById('res');
+            var s = x + y;
+            res.innerHTML = `Result: ${x} + ${y} = ${s}`;
+        }
+    </script>
+</body>
+</html>
