@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usando DOM</title>
+    <style>
+        body{
+            background-color: rgb(44, 44, 44);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando com DOM</h1>
+    <p id = 'p0'>Aqui vai o resultado</p>
+    <p id = 'p1'>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    
+    
+   
+    <script>
+        //DOM = Document Object Model - Documento de Modelo de Objetos - Ele roda no navegador e não no JavaScript
+        //A estrutura é chamada de árvore, onde a raíz da mesma é a Window (janela)
+        /*
+        Exemplificando pra você caso esteja estudando por este documento, window é a janela principal. Por esse motivo ela é considerada um objeto.
+        Objetos tem funções dentro da prórpia classe.
+        Então ao usar um comando ```window."alguma-funçào-aqui"(variavel ou conteudo)``` você está acessando uma função que já foi feita por alguém para facilitar a sua vida :D
+        Qualquer duvida, pergunte pra mim sobre o assunto de Objetos e Classes que eu posso aprofundar mais o assunto pra você.
+        */
+
+        /* - - Teste - - Desconsidere isso
+        var p1 = window.document.getElementById('p1')
+        p1.style.color = 'yellow'
+        var button = window.document.getElementById('click_here')
+        */
+        //var cl = window.document.querySelector('div#click_here') // quando for classe usa pontinho, mas como é ID (linha 21 declarei como di) usa com #
+        
+        var cl = window.document.querySelector('div.click_here')
+        cl.style.color = 'yellow'
+        
+    </script>
+</body>
+</html>

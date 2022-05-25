@@ -1,0 +1,12 @@
++ usado para somas e concatenações
+- usado para subtrações
+* multiplicações
+/ divisões
+** exponenciação
+|| or (traduzindo: ou) MACETE: se tiver um TRUE, ou seja, uma expressão que atenda e retorne true, o retorno todo é true. EX: TRUE || FALSE
+&& ou (traduzindo: e) Macete: se tiver um FALSE é tudo false. Só se for
+TRUE && TRUE que retorno TRUE, qualquer outra retorna FALSE
+i++ é igual a i +=1 que é igual a i = i + 1
+o mesmo vale pra subtração
+== é para verificar se duas variaveis tem o mesmo valor
+=== é para verificar se duas variaveis tem o mesmo valor e tipo

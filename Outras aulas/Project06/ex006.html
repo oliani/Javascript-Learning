@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+    <style>
+        div{
+            font: normal 20pt Arial;
+            background-color: rgb(54, 54, 54);
+            color:white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "area" > N/A </div>
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', cl)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', saiu)
+        area.addEventListener('wheel', wheel) // Scroll do mouse
+        area.addEventListener('mousemove', move) // Mouse se movimentar
+        area.addEventListener('mousedown', holding) // Segurando o botão de click
+
+        /*
+            Referências de onde tirei os outros: 
+            https://developer.mozilla.org/pt-BR/docs/Web/Events
+        */
+
+        function cl(){
+            
+            area.innerText = 'Clicou!'
+        }
+        function entrar(){
+            
+            area.innerText = 'Entrou!'
+        }
+
+        function wheel(){
+            
+            area.innerText = 'Wheel!'
+        }
+        function saiu(){
+            
+            area.innerText = 'Saiu!' 
+        }
+        function move(){
+            area.innerText = 'Moveu!' 
+        }
+        function holding(){
+            
+            area.innerText = 'Segurando!'
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type='number' name = 'txtvel' id='txtvel'> Km/h
+    <input type="button" value="verificar" onclick="verifica()">
+    <div id = 'res'></div>
+    <script>
+        var vel = window.document.getElementById('txtvel')
+        function verifica(){
+            if (vel.value > 50){ /*Se a velocidado for maior que 50 faça o que tem ai em baixo*/
+                window.document.getElementById('res').innerHTML = `Sua velocidade é de <strong>${vel.value} </strong>Km/h.`
+                window.document.getElementById('res').innerHTML += `<p> Você foi multado!!</p>`
+            }
+            else{ /*Se não for faça o que tem ai em baixo*/
+                window.document.getElementById('res').innerHTML = `<p>Sua velocidade é de <strong>${vel.value} </strong>Km/h. Você está dentro do limite de velocidade!</p>` 
+                window.document.getElementById('res').innerHTML += `<p> Dirija com segurança!</p>`
+            }
+            /*Esse é o melhor jeito de entender o if e os desvios de padrão*/
+        }
+    </script>
+</body>
+</html>

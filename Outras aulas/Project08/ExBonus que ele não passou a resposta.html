@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estranjeiro ou br?</title>
+</head>
+<body>
+    <h1>Teste de nacionalidades</h1>
+    <p>
+        Digite a nacionalidade a ser verificada: 
+        <input type="text" name="Uinput" id="Uinput">
+        <input type="button" value="Verificar" id="clickbutton" onclick="checkinput()">
+    </p>
+    
+    <div id = "d1"></div>
+    <script>
+        function checkinput(){
+            var Uinput = window.document.querySelector('input#Uinput')
+            var d1 = window.document.getElementById('d1')
+            if (Uinput.value== 'BR' || Uinput.value == 'br')
+                d1.innerHTML = `<p1>É brasilerio!<p1>`
+             else if(Uinput.value == 'USA' || Uinput.value == 'usa')
+                 d1.innerHTML = `<p1>É Americano!<p1>`
+            else if(Uinput.value == 'ENG' || Uinput.value == 'eng')
+                d1.innerHTML = `<p1>É inglês!<p1>`
+            else
+                d1.innerHTML = `<p>É de nacioladiade não definida! Digitado: ${Uinput.value}</p>` // mostra também o que o usuário digitou, só pra verificar se está tudo certo      
+        }
+
+        /* uso de "else if" ele mostra só na parte 2, mas eu fiz assim pois já sei como funciona*/
+
+/* JEITO SIMPLES DE FAZER
+        
+        <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>País</title>
+    </head>
+    <body>
+        <h1>Seu país</h1>
+        país <input type="text" name="txtvel" id="txtvel">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res">
+
+        </div>
+        <script>
+            function verificar() {
+                var txtv = window.document.querySelector('input#txtvel')
+                var res = window.document.querySelector('div#res')
+                var vel = (txtv.value)
+                res.innerHTML = `<p>Você está em <strong>${vel}</strong><p>`
+                if (vel == 'Brasil') {
+                    res.innerHTML += '<p>Você é <strong>Brasileiro!</strong><p>'
+                } else {
+                    res.innerHTML += '<p>Você é <strong>Estrangeiro!</strong><p>'
+                }
+            } 
+*/
+
+// NÃO EXISTE JETO CERTO OU JEITO ERRADO, EXISTE O JEITO QUE VOCÊ FAZ E O JEITO QUE OUTRA PESSOA FAZ, SE O RESULTADO DER CERTO ESTÁ CERTO
+    </script>
+</body>
+</html>
+        
+        
+        
+        
+        
+        */
+    </script>
+    
+</body>
+</html>
