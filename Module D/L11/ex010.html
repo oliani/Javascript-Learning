@@ -9,9 +9,8 @@
 <body>
     
     <h1>Sistema de Multas</h1>
-    <div id = 'limite'></div>
-    Velocidade do veículo <input type="number" name="vel" id="txtvel"> km/h
-    <input type="button" value="verificar" onclick = "calcular()">
+        Velocidade do veículo <input type="number" name="vel" id="txtvel"> km/h
+        <input type="button" value="verificar" onclick = "calcular()">
     <div id="res">    </div>
     <script>
         function calcular(){
@@ -30,9 +29,6 @@
             }
             res.innerHTML += `<p><strong>Use o sinto de segurança e tenha uma boa viagem!</strong></p>`
             window.document.querySelector("div#limite").innerHTML = `<H2> Limite de valocidade ${tolerancia} </H2>`
-
-            var resultado = 0.1+0.2
-            window.document.querySelector("div#limite").innerHTML += `<br> 0.1 + 0.2 = ${resultado}`
         }
     </script>
 </body>
