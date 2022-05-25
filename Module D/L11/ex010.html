@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Sistema de Multas</h1>
+    <div id = 'limite'></div>
+    Velocidade do veículo <input type="number" name="vel" id="txtvel"> km/h
+    <input type="button" value="verificar" onclick = "calcular()">
+    <div id="res">    </div>
+    <script>
+        function calcular(){
+            var velocidade = Number(window.document.getElementById("txtvel").value)
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Velocidade registrada em <strong>${velocidade}</strong> km/h</p>`
+            var tolerancia = 50
+            var percentual = ((velocidade * 100) / tolerancia) - 100
+            if (velocidade > tolerancia + (tolerancia * 0.05)){
+                /* Rolerância de até 5% acimado limite*/
+                res.innerHTML += `<p><strong>VOCÊ FOI MULTADO!</strong></p> ${percentual}% acima do permitido`
+            }  else if (velocidade > tolerancia){
+                res.innerHTML += `<p><strong>CUIDADO!</strong> Você passou na margem de ${percentual}%</p>`
+            } else {
+                res.innerHTML += `<p><strong>LIBERADO!</strong></p>`
+            }
+            res.innerHTML += `<p><strong>Use o sinto de segurança e tenha uma boa viagem!</strong></p>`
+            window.document.querySelector("div#limite").innerHTML = `<H2> Limite de valocidade ${tolerancia} </H2>`
+
+            var resultado = 0.1+0.2
+            window.document.querySelector("div#limite").innerHTML += `<br> 0.1 + 0.2 = ${resultado}`
+        }
+    </script>
+</body>
+</html>
